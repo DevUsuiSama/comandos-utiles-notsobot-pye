@@ -4,17 +4,21 @@
  * Copyright (c) 2023 UsuiSama
  */
 
-function main() {
+async function main() {
   let eList = document.getElementById("lista");
+  const COMANDOS = await leerJson();
 
-  LISTA_DE_COMANDOS.forEach((item) => {
+  COMANDOS.PyE.forEach((item) => {
     let eItem = document.createElement("li");
 
     eItem.classList.add("font-orbitron");
     eItem.classList.add("item");
+    eItem.setAttribute("title", "copiar texto");
     eItem.onclick = copiarTexto;
     eItem.textContent = item;
 
     eList.appendChild(eItem);
   });
 }
+
+window.onload = main;
