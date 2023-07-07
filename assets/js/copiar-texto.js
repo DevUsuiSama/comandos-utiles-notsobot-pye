@@ -8,7 +8,7 @@
  * @param {Event} event
  */
 function copiarTexto(event) {
-    navigator.clipboard.writeText(event.target.outerText).then(() => {
-      alert("Texto copiado");
-    });
-  }
+  navigator.clipboard.writeText(event.target.outerText).then(() => {
+    alert("Texto copiado");
+  });
+}
