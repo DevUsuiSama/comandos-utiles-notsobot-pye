@@ -1,10 +1,12 @@
 {
   "PyE": [
+    ".t notfound",
     ".t !codify",
     ".t almanaque",
     ".t codebackticks",
     ".t create [name] [content]",
     "!google",
-    "!code"
+    "!code",
+    ";compile"
   ]
 }
