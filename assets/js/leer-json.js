@@ -5,7 +5,7 @@
  */
 
 async function leerJson() {
-  const RES = await fetch("https://devusuisama.github.io/comandos-utiles-notsobot-pye/assets/json/comandos.json");
+  const RES = await fetch("https://devusuisama.github.io/comandos-utiles-pye/assets/json/comandos.json");
   const COMANDOS = await RES.json();
   return COMANDOS;
 }
