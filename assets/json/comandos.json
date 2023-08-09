@@ -4,12 +4,12 @@
     ".t !codify",
     ".t almanaque",
     ".t codebackticks",
-    ".t create [name] [content]",
+    ".t create <name> <content>",
     "!google",
     "!code",
     ";compile",
     ".ocr",
-    ".t akira [user]",
+    ".t akira <user>",
     ".t noteregales",
     ".t searchyt"
   ]
