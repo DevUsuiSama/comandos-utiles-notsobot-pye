@@ -1,16 +1,22 @@
 {
-  "PyE": [
+  "NotSoBot": [
+    ".ocr",
     ".t notfound",
     ".t !codify",
     ".t almanaque",
     ".t codebackticks",
     ".t create <name> <content>",
-    "!google",
-    "!code",
-    ";compile",
-    ".ocr",
     ".t akira <user>",
     ".t noteregales",
     ".t searchyt"
+  ],
+  "PyEBot": [
+    "!google",
+    "!code",
+    "!q1",
+    "!r11"
+  ],
+  "Compiler": [
+    ";compile"
   ]
 }
