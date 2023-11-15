@@ -4,260 +4,106 @@
  * Copyright (c) 2023 UsuiSama
  */
 
- .font-orbitron {
-    /* font-family: "Orbitron"; */
-    
-  }
-  
-  .box-shadow-white {
-    box-shadow: 0 0 3px 0 white;
-  }
-  
-  /* a:link {
-    color: cyan;
-  }
-  
-  a:visited {
-    color: yellow;
-  }
-  
-  a:hover {
-    color: lime;
-  }
-  
-  a:active {
-    color: red;
-  } */
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   * ___________                    __          
-   * \_   _____/_ __   ____   _____/  |_  ____  
-   *  |    __)|  |  \_/ __ \ /    \   __\/ __ \ 
-   *  |     \ |  |  /\  ___/|   |  \  | \  ___/ 
-   *  \___  / |____/  \___  >___|  /__|  \___  >
-   *      \/              \/     \/          \/ 
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
-  @font-face {
-    font-family: "Orbitron";
-    src: url("../font/Orbitron/Orbitron-VariableFont_wght.ttf");
-  }
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   * __________           .___      
-   * \______   \ ____   __| _/__.__.
-   *  |    |  _//  _ \ / __ <   |  |
-   *  |    |   (  <_> ) /_/ |\___  |
-   *  |______  /\____/\____ |/ ____|
-   *         \/            \/\/     
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
-  body {
-    background-color: #EBEBEC;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-  }
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   * ___________                   ___.                              .___      
-   * \_   _____/ ____   ____ _____ \_ |__   ____ _____________     __| _/____  
-   *  |    __)_ /    \_/ ___\\__  \ | __ \_/ __ \\___   /\__  \   / __ |/  _ \ 
-   *  |        \   |  \  \___ / __ \| \_\ \  ___/ /    /  / __ \_/ /_/ (  <_> )
-   * /_______  /___|  /\___  >____  /___  /\___  >_____ \(____  /\____ |\____/ 
-   *        \/     \/     \/     \/    \/     \/      \/     \/      \/       
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
-  header {
-    padding: 40px 0px;
-    text-align: center;
-  }
-  
-  header > h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #0071BC;
-  }
-  
-  header > p {
-    margin-top: 8px;
-  }
+body {
+  background-color: #EBEBEC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
 
-  header > p > a {
-    color: black;
-    text-decoration: none;
-  }
+.encabezado {
+  padding: 40px 0px;
+  text-align: center;
+}
 
-  header > p > a:hover {
-    color: #0071BC;
-    text-decoration: underline;
-  }
+.encabezado__titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0071BC;
+}
 
-  header > img {
-    position: absolute;
-    z-index: -10;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-  
+.encabezado__parrafo {
+  margin-top: 8px;
+}
 
-  @media screen and (max-width: 768px) {
-    header {
-      justify-content: center;
-    }
-  
-    header > h1 {
-      font-size: 1.3rem;
-    }
-  }
-  
-  @media screen and (max-width: 280px) {
-    header > h1 {
-      font-size: 0.8rem;
-    }
-  }
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   *    _____         .__        
-   *   /     \ _____  |__| ____  
-   *  /  \ /  \\__  \ |  |/    \ 
-   * /    Y    \/ __ \|  |   |  \
-   * \____|__  (____  /__|___|  /
-   *         \/     \/        \/ 
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
+.encabezado__link {
+  color: black;
+  text-decoration: none;
+}
 
-  main {
-    flex-grow: 1;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  
-  textarea {
-    appearance: none;
-    outline: none;
-    border: solid 2px lime;
-    box-shadow: 0 0 3px lime;
-    transition: all ease 1s;
-    padding: 4px 10px;
-    font-size: 1rem;
-    resize: none;
-    background-color: black;
-    color: white;
-  }
-  
-  textarea:invalid {
-    border: solid 2px red;
-    box-shadow: 0 0 3px red;
-  }
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   * __________        __    __                 
-   * \______   \__ ___/  |__/  |_  ____   ____  
-   *  |    |  _/  |  \   __\   __\/  _ \ /    \ 
-   *  |    |   \  |  /|  |  |  | (  <_> )   |  \
-   *  |______  /____/ |__|  |__|  \____/|___|  /
-   *         \/                              \/ 
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
-  main div:nth-child(2) {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.encabezado__link:hover {
+  color: #0071BC;
+  text-decoration: underline;
+}
+
+.encabezado__img {
+  position: absolute;
+  z-index: -10;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .encabezado {
     justify-content: center;
-    gap: 20px;
-  }
-  
-  main div:nth-child(2) button {
-    height: 38px;
-    appearance: none;
-    outline: none;
-    border: solid 1px #00e5e5;
-    box-shadow: 0 0 3px #00e5e5;
-    transition: all ease 1s;
-    padding: 4px 10px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    resize: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    transition: all 1s ease;
-  }
-  
-  main div:nth-child(2) button:hover {
-    background-color: #00cccc;
-    border: solid 2px #00b7b7;
-    box-shadow: 0 0 3px #00b7b7;
-  }
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   * .____    .__          __          
-   * |    |   |__| _______/  |______   
-   * |    |   |  |/  ___/\   __\__  \  
-   * |    |___|  |\___ \  |  |  / __ \_
-   * |_______ \__/____  > |__| (____  /
-   *         \/       \/            \/ 
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
-  
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0 8px;
-  }
-  
-  ul li {
-    list-style: none;
   }
 
-  .item {
-    padding: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+  .encabezado__titulo {
+    font-size: 1.3rem;
+  }
+}
 
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .item:hover {
-    background-color: white;
-    box-shadow: 0px 14px 24px -14px rgba(0, 0, 0, 0.15);
-  }
-
-  .item:hover .item-icon {
-    color: #0071BC;
-  }
-
-  .item-icon {
-    width: 24px;
-    height: 24px;
-    color: #b1b1b1;
-  }
-  
-  /*
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   *___________            __                
-   *\_   _____/___   _____/  |_  ___________ 
-   * |    __)/  _ \ /  _ \   __\/ __ \_  __ \
-   * |     \(  <_> |  <_> )  | \  ___/|  | \/
-   * \___  / \____/ \____/|__|  \___  >__|   
-   *     \/                         \/       
-   * //////////////////////////////////////////////////////////////////////////////////////////////////
-   */
-  footer {
-    color: white;
-    padding: 20px;
+@media screen and (max-width: 280px) {
+  .encabezado__titulo {
     font-size: 0.8rem;
   }
+}
+
+.main {
+  flex-grow: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__subtitulo {
+  margin: 10px;
+  font-size: large;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.main__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 8px;
+}
+
+.main__item {
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.main__item {
+  background-color: white;
+  box-shadow: 0px 14px 24px -14px rgba(0, 0, 0, 0.15);
+}
+
+.main__item:hover .main__item-icon {
+  color: #0071BC;
+}
+
+.main__item-icon {
+  width: 24px;
+  height: 24px;
+  color: #b1b1b1;
+}

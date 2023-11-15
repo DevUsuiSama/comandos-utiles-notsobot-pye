@@ -27,45 +27,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="assets/js/copiar-texto.js"></script>
-  <script src="assets/js/leer-json.js"></script>
-  <script src="assets//js/crear-item.js"></script>
+  <script src="assets/js/lector-de-archivo-json.js"></script>
+  <script src="assets/js/item.js"></script>
+  <script src="assets//js/lista.js"></script>
   <script src="assets/js/main.js"></script>
 </head>
 
 <body>
-  <header>
-    <img src="assets/images/header.png" alt="">
-    <h1 class="font-orbitron">Comandos Útiles [PyE]</h1>
-    <p>
+  <header class="encabezado">
+    <img class="encabezado__img" src="assets/images/header.png" alt="">
+    <h1 class="encabezado__titulo">Comandos Útiles [PyE]</h1>
+    <p class="encabezado__parrafo">
       @DevUsuiSama&nbsp;&nbsp;|&nbsp;&nbsp;@Pride&nbsp;&nbsp;|
-      <a href="https://discord.com/invite/programacion" title="descentralizado iconos">
+      <a class="encabezado__link" href="https://discord.com/invite/programacion" title="descentralizado iconos">
         Icono diseñado por [PyE]
       </a>
     </p>
   </header>
-  <main>
-    <h2 class="font-orbitron" style="
-      margin: 10px;
-      font-size: large;
-      text-decoration: underline;
-      font-weight: bold;
-    ">[[NotSoBot]]</h2>
-    <ul id="lista-1" style="list-style: inside;"></ul><br>
-    <h2 class="font-orbitron" style="
-      margin: 10px;
-      font-size: large;
-      text-decoration: underline;
-      font-weight: bold;
-    ">[[PyEBot]]</h2>
-    <ul id="lista-2" style="list-style: inside;"></ul><br>
-    <h2 class="font-orbitron" style="
-      margin: 10px;
-      font-size: large;
-      text-decoration: underline;
-      font-weight: bold;
-    ">[[Compiler]]</h2>
-    <ul id="lista-3" style="list-style: inside;"></ul><br>
+  <main class="main">
+    <h2 class="main__subtitulo">[[NotSoBot]]</h2>
+    <ul id="lista-1" class="main__lista"></ul><br>
+    <h2 class="main__subtitulo">[[PyEBot]]</h2>
+    <ul id="lista-2" class="main__lista"></ul><br>
+    <h2 class="main__subtitulo">[[Compiler]]</h2>
+    <ul id="lista-3" class="main__lista"></ul><br>
   </main>
 </body>
 

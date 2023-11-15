@@ -4,23 +4,26 @@
  * Copyright (c) 2023 UsuiSama
  */
 
-async function main() {
-  const E_LIST_1 = document.getElementById("lista-1");
-  const E_LIST_2 = document.getElementById("lista-2");
-  const E_LIST_3 = document.getElementById("lista-3");
-  const COMANDOS = await leerJson();
+class MainApplication {
+  async main() {
+    const LECTOR = new LectorDeArchivoJSON("https://devusuisama.github.io/comandos-utiles-pye/assets/json/comandos.json");
+    const COMANDOS = await LECTOR.leer();
+    const LISTA = new Lista(["lista-1", "lista-2", "lista-3"]);
 
-  COMANDOS.NotSoBot.forEach((item) => {
-    E_LIST_1.appendChild(crearItem(item));
-  });
+    COMANDOS.NotSoBot.forEach((item) => {
+      LISTA.agregar(1, item);
+    });
 
-  COMANDOS.PyEBot.forEach((item) => {
-    E_LIST_2.appendChild(crearItem(item));
-  });
+    COMANDOS.PyEBot.forEach((item) => {
+      LISTA.agregar(2, item);
+    });
 
-  COMANDOS.Compiler.forEach((item) => {
-    E_LIST_3.appendChild(crearItem(item));
-  });
+    COMANDOS.Compiler.forEach((item) => {
+      LISTA.agregar(3, item);
+    });
+  }
 }
 
-window.onload = main;
+const APP = new MainApplication;
+
+window.onload = APP.main;
